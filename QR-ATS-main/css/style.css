@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Merriweather", serif;
+}
+
+body{
+  background-color: #ffedec;
+}
+
+.left, .right{
+    width: 400px;
+    overflow: auto;
+    float: left;
+    margin: 1rem;
+    text-align: center;
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: none;
+}
+
+
+input[type='radio']{
+    margin-left: 0.5rem;
+    transform: scale(1.1);
+    accent-color: #fd0200;
+}
+
+label{
+    font-size: 1rem;
+}
+
+.right .input_area{
+    width: 75%;
+    box-shadow: 5px 5px #ff504e;
+    overflow: auto;
+    height: 2.5rem;
+    overflow: hidden;
+    background-color: #ffcac9;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.right .input_area input, select{
+    width: 80%;
+    height: 99%;
+    font-size: 1rem;
+    float: left;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+}
+
+.right .input_area input::placeholder, select{
+    color: #fd3837;
+}
+option{
+    color: black;
+}
+
+.right .input_area img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 8px;
+}
+
+form{
+    margin-top: 5rem;
+}
+
+form h2{
+    text-align: left;
+    margin-left: 6.5rem;
+    margin-top: 4rem;
+}
+
+.button_submit{
+    width: 75%;
+    height: 2.3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #fd0200;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #fc6d6a;
+    margin-left: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    width: auto;
+    height: 2rem;
+}
+.logo h2{
+    float: left;
+    color: #c32e2e;
+    font-family: "Anta", sans-serif;
+}
+.logo img{
+    margin: 0px;
+    background-color: #c32e2e;
+    border-radius: 50%;
+    float: left;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* admin  */
+
+.header{
+    height: 2.5rem;
+    width: 99%;
+    display: inline-block;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 5px #ff504e;
+    border-radius: 5px;
+    background-color: white;
+    overflow: auto;
+    margin: 10px;
+}
+
+.header h3{
+    margin-top: 10px;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.header .profile_name{
+    float: right;
+}
+
+.header .profile{
+    float: right;
+    margin-top: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 0px;
+    overflow: hidden;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    transition: all 0.2s;
+}
+
+.sidebar{
+    height: 80vh;
+    width: 2.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px #ff504e;
+    float: left;
+    overflow: hidden;
+    margin-top: 2.5rem;
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.sidebar span{
+    margin-top: 10px;
+    font-weight: bolder;
+    float: left;
+    width: 0px;
+    margin-left: 2px;
+    transition: all 0.2s;
+}
+
+.sidebar a{
+    color: black;
+}
+
+.sidebar:hover{
+    width: 130px;
+}
+
+.sidebar:hover span{
+    width: 80px;
+}
+
+.sidebar li{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.sidebar img{
+    float: left;
+    height: 2rem;
+    width: 2rem;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    float: right;
+    overflow: auto;
+}
+
+.cards_group{
+    float: left;
+    overflow: auto;
+}
+.card{
+    height: 140px;
+    width: 255px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px #ff504e;
+    overflow: auto;
+    float: left;
+    margin: 1rem;
+}
+
+.card h4, .card h1, .card h2, .card h3{
+    margin-left: 10px;
+}
+
+.card h1, .card h2{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card h4{
+    margin-top: 50px;
+}
+
+.card h3{
+    
+    margin-top: 90px;
+}
+
+.card img{
+    float: right;
+    margin-right: 30px;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 30px;
+}
+
+.card:nth-of-type(1){
+    height: 200px;
+}
+
+.card:nth-of-type(1) img{
+    height: 50px;
+    width: 50px;
+}
+
+table{
+    margin-top: 1rem;
+    width: 95%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th{ 
+    padding: 5px;
+    background-color: #ff9896;
+}
+
+td{
+    padding: 5px;
+    background-color: white;
+}
+
+option{
+    background-color: #ffcac9;
+}
+
+.add{
+    color: white;
+    background-color: #fc6d6a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .left, .right{
+        margin-left: 10rem;
+    }
+    .right{
+        margin-top: 4rem;
+    }
+    .container{
+        width: 90%;
+    }
+    .sidebar{
+        margin-left: 3rem;
+    }
+    .left img{
+        display: block;
+    }
+
+}

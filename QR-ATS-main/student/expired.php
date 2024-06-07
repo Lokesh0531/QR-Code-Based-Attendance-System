@@ -1,0 +1,1 @@
+<h1>QR Code Expired!</h1>
